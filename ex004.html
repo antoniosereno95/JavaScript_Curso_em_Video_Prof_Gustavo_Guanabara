@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <!-- Aqui comeca a parte de CSS -->
+    <style>
+        body{ 
+            background-color: rgb(95, 175, 88);
+            color: rgb(247, 234, 62);
+            font: normal 25pt Arial;
+        }
+        h1{
+            color: rgb(20, 16, 250);
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Ola, Mundo!</h1>
+    <p>Ja me livrei a da maldição.</p>
+    
+    <!-- Aqui começa a aparte de JS -->
+    <script>
+        
+        var nome = window.prompt("Digite seu nome:");
+       
+        var idade = Number.parseInt(window.prompt("Digite sua idade:")); 
+        
+        var nacionalidade = String(prompt("Qual a sua nacionalidade:"));
+
+        window.alert(`Voce é o ${nome}, tem ${idade} anos e tem nacionalidade ${nacionalidade}.`); //O nome desse "${}" com a utilização da crase no lugar das aspas é chamado de "TEMPLATE STRING", e funciona melhor que o operador de concatenação ente strings " + ".OBS: o operador "${}" se chama placeholder.
+       
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <!-- Aqui comeca a parte de CSS -->
+    <style>
+        body{ 
+            background-color: rgb(248, 248, 250);
+            color: rgb(97, 90, 155);
+            font: normal 25pt Arial;
+        }
+        h1{
+            color: rgb(14, 10, 240);
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Ola, Mundo!</h1>
+    <p></p>
+    
+    <!-- Aqui começa a aparte de JS -->
+    <script>
+
+        var nome = window.prompt("Digite seu nome:"); 
+        var sal = Number.parseFloat(prompt(`Digite seu salario ${nome}:`));
+        
+        document.write(`Bem Vindo(a) <strong>${nome.toUpperCase()}</strong>!,</br>Seu nome tem ${nome.length} letras!</br>O salario do ${nome}, com quatro casas decimais, é de: ${sal.toFixed(3).replace(".", ",")}.</br>`); 
+
+        //"document.write" adiciona textos ao body do HTML.
+        //"</br>" é o comando pra pular uma linha no HTML, significa "break roll"(quebra de linha).
+        //"<strong></strong>" essa tag no HTML deixa o texto que ele envolve em NEGRITO!.
+        //o ".toFixed(n)" deixa o numero com "n" casa decimeias que sao deficnidas na hora da escrita da função.
+        //".replace(".", ",")" troca o ponto do numero flutuante americano pela virgula do nuemro flutuante brasileiro.
+        
+
+        //".toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'} );" - esse comando deveria colocar a string no estilo de dinehrio do br tipo "$ --,-- ". **Esse comando funciona no nodeJS.
+        
+    </script>
+
+</body>
+</html>

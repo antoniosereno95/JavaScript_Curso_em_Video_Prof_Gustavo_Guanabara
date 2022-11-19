@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <!-- Aqui comeca a parte de CSS -->
+    <style>
+        body{ 
+            background-color: rgb(15, 8, 8);
+            color: rgb(55, 197, 197);
+            font: normal 25pt Arial;
+        }
+        h1{
+            color: yellowgreen;
+        }
+        h4{
+            color: blueviolet;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Ola, Mundo!</h1>
+    <p>Ja me livrei a da maldição.</p>
+    
+    <!-- Aqui começa a aparte de JS -->
+    <script>
+        
+        var n1 = Number.parseFloat(window.prompt("Digite um numero:")); //O prompt devolve um valor de tipo STRING, temos que converte-lo para INT.
+        var n2 = Number.parseFloat(window.prompt("Digite outro numero:")); //Se for pra INT usar "Number.parseInt(n)".
+
+        result = n1 + n2; 
+        window.alert("Soma dos numeros digitados é: " + String(result)); 
+
+        //se quiser forçar o numero pra INt ou FLoat usar o Number.parseInt(n) e Number.parseFloat(n), mas se quiser abreviar e deixar o JS se virar, da pra usar so o "Number(n)".
+
+        //Sendo a conversao de numero para String, usamos: "String(n)" ou o "n.toString()".
+        
+    </script>
+
+</body>
+</html>
